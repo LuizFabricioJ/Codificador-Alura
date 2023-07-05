@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsiveness.css">
+    <link rel="shortcut icon" href="assets/logo-alura-icon.png" type="image/x-icon">
+
+    <title>Decodificador de Texto</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="assets/logo.svg" alt="Logo da Alura">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="input-container">
+            <textarea id="text" class="input" placeholder="Digite seu texto aqui..." required></textarea>
+                <div class="btn-info">
+                    <label class="label">&#9830;</svg>Apenas letras minúsculas e sem acento.</label>
+                    <div class="form-buttons">
+                        <button id="cript" type="button">Criptografar</button>
+                        <button id="descript" type="button">Descriptografar</button>
+                        
+                    </div>
+                </div>
+        </section>
+
+        <section class="result-container">
+            <div class="info-result">
+                <h2 class="no-result-title">Nenhuma mensagem encontrada</h2>
+                <p class="no-result-text">Seu texto digitado aparecera aqui...</p>
+            </div>
+
+            <div class="result">
+                <p id="Texto"></p>
+                <button id="btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alura Challenge - ONE - Desenvolvido por Luiz Fabricio </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
